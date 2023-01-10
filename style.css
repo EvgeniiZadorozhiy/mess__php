@@ -1,0 +1,225 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;   
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+html {
+    overflow: hidden;
+}
+
+html#html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html#html::-webkit-scrollbar {
+    width: 0;
+}
+
+body#body {
+    background-color: rgb(180, 180, 180);
+}
+
+body {
+    background-color: grey;
+    --font-size: 2.5vh;
+    font-size: var(--font-size);
+}
+
+main {
+    height: 90vh;                   /*CHANGE*/
+    width: 40vw;                    /*CHANGE*/
+    margin: 5vh auto;               /*CHANGE*/
+    padding: 2vw;                   /*CHANGE*/
+
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+    height: 73vh;
+    overflow: scroll;
+}
+
+iframe::-webkit-scrollbar {
+    width: 0;
+}
+
+/* #messages {
+    flex: 0 0 auto;
+    height: 73vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#messages::-webkit-scrollbar {
+    width: 0;
+} */
+
+p {
+    flex: 0 0 auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5vmin;               /*CHANGE*/
+    margin-bottom: 1vw;             /*CHANGE*/
+    background-color: rgb(210, 210, 210);
+    font-size: 3vh; 
+}
+
+form {
+    flex: 1 0 auto;
+    height: 7vh;                    /*CHANGE*/
+    display: flex;
+    align-items: flex-end;
+}
+
+textarea {
+    height: 7vh;                    /*CHANGE*/
+    width: 30vw;                    /*CHANGE*/
+    
+    margin-right: 1vw;              /*CHANGE*/
+    padding: 2vh ;                  /*CHANGE*/
+
+    font-size: var(--font-size);    /*CHANGE*/
+    resize: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+button {
+    font-size: var(--font-size);   /*CHANGE*/
+    height: 7vh;                   /*CHANGE*/
+    width: 5vw;                    /*CHANGE*/
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media (orientation: portrait) {
+    * {
+        letter-spacing: normal;
+        font-size: 2.5vh;
+    }
+
+    main {
+        height: 88vh;                   /*CHANGE*/
+        width: 90vw;                    /*CHANGE*/
+        margin: 2vh auto;               /*CHANGE*/
+        margin-bottom: 10vh;
+        padding: 4vw;                   /*CHANGE*/
+    }
+
+    #messages {
+        height: 76vh;                   /*CHANGE*/
+    }
+
+    p {
+        margin-bottom: 1vh;             /*CHANGE*/
+    }
+
+    form {
+        height: 7vh;                    /*CHANGE*/
+    }
+
+    textarea {
+        height: 7vh;                    /*CHANGE*/
+        width: 62vw;                    /*CHANGE*/
+        
+        margin-right: 4vw;              /*CHANGE*/
+        padding: 2vh ;                  /*CHANGE*/
+    }
+
+    button {
+        height: 7vh;                    /*CHANGE*/
+        width: 15vw;                    /*CHANGE*/
+    }
+}
